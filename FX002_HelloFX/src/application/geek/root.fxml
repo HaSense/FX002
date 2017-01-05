@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane
+	prefHeight="300.0"
+	prefWidth="300.0"
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.geek.GeekController"
+	>
+	<bottom>
+		<Button
+			fx:id="btn1"
+			onAction="#handleBtnShowAction"
+			mnemonicParsing="false"
+			text="그림출력"
+			BorderPane.alignment="CENTER" />
+	</bottom>
+	<padding>
+		<Insets
+			bottom="10.0"
+			left="10.0"
+			right="10.0"
+			top="10.0" />
+	</padding>
+	<center>
+		<HBox
+			alignment="CENTER"
+			prefHeight="100.0"
+			prefWidth="200.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<VBox
+					alignment="CENTER_LEFT"
+					prefHeight="200.0"
+					prefWidth="100.0"
+					spacing="10.0">
+					<children>
+						<CheckBox
+							fx:id="chk1"
+							onAction="#handleChkAction"
+							mnemonicParsing="false"
+							text="안경" />
+						<CheckBox
+							fx:id="chk2"
+							onAction="#handleChkAction"
+							mnemonicParsing="false"
+							text="모자" />
+					</children>
+				</VBox>
+				<ImageView
+					fx:id="imgView"
+					fitHeight="150.0"
+					fitWidth="150.0"
+					pickOnBounds="true"
+					preserveRatio="true">
+					<image>
+						<Image url="@../../../image/geek-----.gif" />
+					</image>
+				</ImageView>
+			</children>
+		</HBox>
+	</center>
+</BorderPane>
