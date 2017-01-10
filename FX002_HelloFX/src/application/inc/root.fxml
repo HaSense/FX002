@@ -42,7 +42,7 @@
 			layoutY="116.0"
 			prefHeight="23.0"
 			prefWidth="104.0"
-			promptText="선택하세요" >
+			promptText="선택하세요">
 		</ComboBox>
 		<TextArea
 			layoutX="22.0"
@@ -54,6 +54,7 @@
 			layoutY="120.0"
 			text="게시종료" />
 		<DatePicker
+			fx:id="dateExit"
 			layoutX="239.0"
 			layoutY="116.0"
 			prefHeight="23.0"
