@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.media.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.control.*?>
 
-
 <AnchorPane
-	xmlns:fx="http://javafx.com/fxml"
-	fx:controller="application.media.RootController"
 	prefHeight="220.0"
-	prefWidth="530.0">
+	prefWidth="530.0"
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.media.RootController">
 	<children>
 		<StackPane
 			layoutX="10.0"
@@ -22,7 +23,7 @@
 					fitWidth="360.0"
 					preserveRatio="false">
 					<image>
-						<Image url="@media/audio.png" />
+						<Image url="@../../../media/audio.png" />
 					</image>
 				</ImageView>
 				<MediaView
@@ -53,5 +54,39 @@
 			prefHeight="23.0"
 			prefWidth="131.0"
 			text="중지" />
+		<Label
+			layoutX="385.0"
+			layoutY="168.0"
+			text="소리" />
+		<Slider
+			fx:id="sliderVolum"
+			layoutX="381.0"
+			layoutY="192.0"
+			showTickMarks="true" />
+		<Label
+			layoutX="382.0"
+			layoutY="103.0"
+			text="시간" />
+		<ProgressBar
+			fx:id="progressBar"
+			layoutX="381.0"
+			layoutY="127.0"
+			prefHeight="18.0"
+			prefWidth="82.0"
+			progress="0.0" />
+		<ProgressIndicator
+			fx:id="progressIndicator"
+			layoutX="463.0"
+			layoutY="119.0"
+			prefHeight="53.0"
+			prefWidth="54.0"
+			progress="0.0" />
+		<Label
+			fx:id="labelTime"
+			layoutX="382.0"
+			layoutY="147.0"
+			prefHeight="15.0"
+			prefWidth="82.0"
+			text="0 / 0 sec" />
 	</children>
 </AnchorPane>
