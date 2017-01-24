@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox
+	maxHeight="-Infinity"
+	maxWidth="-Infinity"
+	minHeight="-Infinity"
+	minWidth="-Infinity"
+	prefHeight="217.0"
+	prefWidth="299.0"
+	xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.menu.MenubarController">
+	<children>
+		<MenuBar>
+			<menus>
+				<Menu
+					mnemonicParsing="false"
+					text="파일">
+					<items>
+						<MenuItem
+							onAction="#handleNew"
+							text="새로만들기" />
+						<MenuItem
+							onAction="#handleFileOpen"
+							text="열기" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+		<TextArea
+			fx:id="textArea"
+			prefHeight="180.0"
+			prefWidth="180.0" />
+	</children>
+</VBox>
